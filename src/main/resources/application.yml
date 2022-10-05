@@ -1,0 +1,16 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://db-ajee8.pub-cdb.ntruss.com:3306/foodinko?allowMultiQueries=true&serverTimezone=Asia/Seoul&useLegacyDatetimeCode=false&useUnicode=true&characterEncoding=utf8&amp
+      username: foodinko
+      password: foodinkoMaroon5@
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      connectionTimeout: 30000
+      maximumPoolSize: 30
+      maxLifetime: 1800000
+      poolName: HikariCP
+      readOnly: false
+      connectionTestQuery: SELECT 1
